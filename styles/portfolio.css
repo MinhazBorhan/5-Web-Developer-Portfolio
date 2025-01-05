@@ -1,6 +1,25 @@
 /* Common styles for the portfolio page. */
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
   font-family: "Open Sans", serif;
+}
+
+.primary-title{
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.primary-description{
+    font-size: 18px;
+    font-weight: 400;
+    margin: 30px 0 30px 0px;
+    color: #757575;
+    text-align: center;
 }
 
 .primary-color{
@@ -14,13 +33,16 @@ body{
     font-size: 20px;
     font-weight: 700;
     color: #fff;
-    padding: 15px 35px;
+    padding: 17px 35px;
 }
 
 /* Header styles */
 
 header{
     background-color: #FFF8F3;
+    background-image: url('../images/header_bg.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
 }
 
 /* Navigation bar styles */
@@ -29,6 +51,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     margin: 0 80px;
+    padding-top: 50px;
 }
 
 nav>ul{
@@ -56,12 +79,195 @@ nav>ul>li>a{
 
 /* Banner styles */
 .banner{
-    padding: 30px 30px 30px 150px;
+    padding: 30px 30px 0px 120px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.banner-content{
+    max-width: 585px;
+}
+
+
+.banner-greating{
+    font-size: 45px;
+    font-weight: 600;
+    color: #474747;
+    margin-bottom: 0;
+}
+
+.banner-title{
+    font-size: 85px;
+    font-weight: 700;
+    color: #181818;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.banner-subtitle{
+    font-size: 18px;
+    color: #757575;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .banner .profile-pic{
     width: 584px;
     height: 676px;
+}
+
+/* Main section style */
+
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* About section style */
+
+.about{
+    padding: 130px 155px;
+    border-radius: 5px;
+    background: #FFF8F3;
+    text-align: center;
+    margin-top: 130px;
+}
+
+.about-info-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info-title{
+    color: #757575;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.info-description{
+    color: #474747;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* Do section style */
+
+.do{
+    margin-top: 130px;
+}
+
+.do-info-container{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    gap: 24px;
+    margin-top: 50px;
+}
+
+.do-info{
+    /* border: 1px solid black; */
+    padding: 30px 33px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+}
+
+.do-info-title{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+/* Summary section style */
+
+.summary-main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 113px;
+}
+
+.summary-main-title{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 130px;
+    margin-bottom: 110px;
+}
+
+.summary{
+    display: flex;
+    gap: 71px;
+}
+
+.summary-title{
+    font-size: 30px;
+    font-weight: 700;
+    color: #474747;
+}
+
+.container-title{
+    font-size: 25px;
+    font-weight: 700;
+    color: #474747;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.container-info{
+    font-size: 20px;
+    font-weight: 600;
+    color: #757575;
+    margin-bottom: 20px;
+}
+
+.container-description{
+    font-size: 16px;
+    font-weight: 400;
+    color: #757575;
+    margin-bottom: 30px;
+}
+
+/* Footer section */
+
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    padding: 120px;
+    gap: 115px;
+    background-color: #FFF8F3;
+}
+
+.footer-title{
+    margin-bottom: 28px;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.footer-form{
+    display: grid;
+    flex-direction: column;
+    
+}
+
+.footer-form>input{
+    width: 461px;
+    height: 50px;
+    margin-bottom: 24px;
+    border-radius: 5px;
+    padding: 18px 0 18px 30px;
+    border-style: none;
+}
+
+.footer-form>textarea{
+    width: 461px;
+    height: 170px;
+    margin-bottom: 24px;
+    border-radius: 5px;
+    padding: 18px 0 18px 30px;
+    border-style: none;
+    font-family: "Open Sans", serif;
 }
